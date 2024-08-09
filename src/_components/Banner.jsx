@@ -20,13 +20,13 @@ const Banner = () => {
       </div>
 
       <div className="lg:py-24">
-        <p className='border-2 bg-slate-100 text-sm font-serif border-[#7B5C99]border-dotted rounded-full my-4  px-4 py-2 ' >Knowledge that give you skill </p>
+        <p className='border-2 bg-slate-100 text-sm font-serif border-[#7B5C99]border-dotted rounded-full my-4  px-4 py-2 ' >Enhance Your Expertise </p>
         <h2 className="text-3xl font-bold sm:text-4xl">Develop Your Skills</h2>
 
         <p className="mt-4 text-gray-600">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-          eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-          quidem quam repellat.
+        Unlock your potential with our online courses. Advance your career or explore new fields with comprehensive
+         learning at your own pace. Transform your ambitions into
+          reality from anywhere.
         </p>
 
         <Button className="flex items-center gap-2 my-4" >Get Started <LucideArrowBigRight/> </Button>
