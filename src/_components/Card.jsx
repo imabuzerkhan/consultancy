@@ -27,13 +27,13 @@ import {
 export function CardWithForm() {
   return (
     <>
-    <h2 className='font-bold text-3xl my-10 ' >Categories</h2>
+    <h2 className='font-bold text-3xl my-10 ' >Popular Categories</h2>
     <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 mb-8  ">
       {topics.map(({name , icon},  id) => (
-        <Card key={id} className="w-[150px] bg-green-100 text-black flex flex-col items-center ">
+        <Card key={id} className="w-[150px] bg-green-50 text-black flex flex-col items-center  ">
           <CardHeader>
            
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center my-5 space-x-2">
               <div className='text-4xl text-black ' >{icons[icon]}</div> 
             </div>
           </CardHeader>
