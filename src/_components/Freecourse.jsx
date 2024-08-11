@@ -1,6 +1,7 @@
 "use client"
 import { FaCartArrowDown } from "react-icons/fa";
 import Image from "next/image"
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -18,12 +19,13 @@ export function Freecourses() {
     
     <h2 className="font-bold text-3xl my-10 " >Our Free Courses </h2>
     
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  mb-6 " >
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  mb-6 " >
       {
 Freecourse.map((courses)=>(
+  <Link key={courses.id} href={`/deatils/${courses.id}`} >
 <Card className="  w-[300px] border-none ">
       
-        <div>
+        <div key={courses.id} >
           <Image
           src={courses.image}
           alt="freecoursesimage"
@@ -43,10 +45,12 @@ Freecourse.map((courses)=>(
     </div>
      
     </Card>
+    </Link>
 ))
       }
     
     </div>
+   
     </>
   )
 }

@@ -5,6 +5,7 @@ import Freecourse, { Freecourses } from '@/_components/Freecourse'
 import { PaidCourse } from '@/_components/Paidcourse'
 import { Accordions } from '@/_components/Accordian'
 import React from 'react'
+import DisBanner from '@/_components/DiscountBnaaer'
 
 const page = () => {
   return (
@@ -15,9 +16,12 @@ const page = () => {
      <CardWithForm/>
     <Freecourses/>
     </div>
+    
+    <DisBanner/>
+    <div className=" px-6 md:px-20" >
     <PaidCourse/>
     <Accordions/>
-    
+    </div>
     </>
   )
 }
